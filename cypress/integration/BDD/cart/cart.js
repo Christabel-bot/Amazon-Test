@@ -49,5 +49,5 @@ beforeEach( function(){
 Then ('I validate if the products displayed in the cart is same as the products i added to cart', function()
     {
        cy.wait(2000)
-       cy.get('#sc-active-cart').contains('Ooma Telo VoIP')
+       cy.get('#sc-active-cart').contains('NIVEA Lip Care')
     })

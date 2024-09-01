@@ -9,6 +9,7 @@ return config;
 }
 
 module.exports = defineConfig({
+  projectId: 'xyy6hc',
         env: {username: "Adedeji",
   password: "Gk%%p)Wvb9y4=s=",
    url: "https://www.amazon.com/"},
