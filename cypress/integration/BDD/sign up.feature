@@ -7,7 +7,7 @@ Scenario: Validate sign up with valid credentials
     Then I click Hello sign in Button 
     Then I click create your amazon Account
     When I entered Your Name
-    Then I entered a email field 
+    Then I entered a Email
     When I entered a password
     When I Re-enter password 
     When I click on the sign up Button 
@@ -19,7 +19,7 @@ Scenario: Validate unsuccessful sign up with an existing credentials
     Then I click Hello sign in Button 
     Then I click create your amazon Account
     When I entered Your Name
-    Then I entered a email field 
+    Then I entered an existing email 
     When I entered a password
     When I Re-enter password 
     When I click on the sign up Button 

@@ -33,9 +33,9 @@ beforeEach( function(){
     cy.get('#ap_customer_name').type(this.data.name);
     })
 
-    Then ('I entered a email field', function(){
+    Then ('I entered a New Email', function(){
         cy.wait(3000) 
-    cy.get('#ap_email').type(this.data.NewEmail); 
+    cy.get('#ap_email').type(this.data.email); 
     })  
 
     When ('I entered a password', function(){
@@ -55,6 +55,11 @@ beforeEach( function(){
      cy.contains('Hello, Adedeji').should('be.visible');
     //  cy.get('#nameofuser').should('exist')
     })
+
+    Then ('I entered an existing email', function(){
+        cy.wait(3000) 
+    cy.get('#ap_email').type(this.data.email); 
+    })  
 
     Then ('I Validate unsuccessful sign up to my account', function(){
         cy.contains("There's already an account with this email").should('be.visible');
